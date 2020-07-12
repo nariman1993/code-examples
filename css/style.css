@@ -1,0 +1,228 @@
+/* DEFAULT */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    color: rgb(255, 85, 85);
+}
+
+h4{
+    color: grey;
+}
+
+h1, h2, h3, h4, h5{
+    /* color: rgb(89, 62, 114); */
+    padding: 15px 20px;
+}
+
+span{
+    color: rgb(255, 85, 85);
+}
+
+ul{
+    margin: 0 0 10px 0;
+    padding: 0 60px;
+}
+
+
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #d6d6d629;
+}
+
+
+
+
+
+
+
+/* MAIN */
+.container{
+    /* border: 1px solid #000; */
+    width: 90%;
+    margin: 0 auto;
+}
+
+header{
+    background-color: rgb(82, 250, 194);
+    background-color: rgb(62, 62, 101);
+    width: 100%;
+    height: 25vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-image{
+	background-image: url('../img/coding.gif');
+	background-position: left center;
+	/* background-position: 0 50%; */
+	/* background-repeat: no-repeat; */
+	width: 49%;
+	height: 25vh;
+	position: absolute;
+	top: 0;
+	left: -11%;
+	opacity: 0.2;
+	z-index: 0;
+	clip-path: polygon(0% 0%, 95% 0%, 100% 50%, 95% 100%, 0% 100%);
+}
+
+.text{
+    /* border: 1px solid #000; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+	color: #fff;
+}
+
+.text h1{
+	position: relative;
+	z-index: 1;
+}
+
+
+.box{
+    /* border: 1px dashed  rgb(20, 20, 49); */
+    background-color: beige;
+    margin: 5% 0;
+    box-shadow: 0px 0px 4px 1px rgb(235, 235, 221);
+}
+
+.code-explain{
+    /* border: 1px solid #000; */
+    border-left: 5px solid rgb(56, 60, 71);
+    background-color:#ffff70;
+    background-color:#eff0f1;
+    /* margin: 0 0 15px 0; */
+    padding: 10px 30px;
+    width: 90%;
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(56, 60, 71);
+}
+
+
+.code-img{
+    display: block;
+    margin: 0 auto;
+}
+
+
+button{
+    border: none;
+    background-color: rgb(255, 85, 85);
+    color: #dbe6e6;
+    padding: 7px 99px;
+    font-size: 24px;
+    /* margin: 0 auto; */
+    display: block;
+    cursor: pointer;
+}
+
+button:hover{
+    transform: scale(1.05);
+    color: rgb(255, 255, 255);
+}
+
+.result{
+    /* border: 1px solid #000; */
+    position: relative;
+}
+
+#btnPets, #btn, #btn2, #btn3{
+    position: absolute;
+    top: 10%;
+    left: 17%;
+}
+
+.btn-hide{
+    display: none;
+}
+
+input{
+    color: #000;
+}
+
+.hide-btn{
+    display: none;
+}
+
+
+#app{
+    /* border: 1px solid #000; */
+    width: 70%;
+    margin: 0 auto;
+    /* border: 1px solid #000; */
+}
+
+
+.animal{
+    background-color: #fff;
+    box-shadow: 1px 1px 3px 1px rgba(138, 125, 125, 0.75);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 50px 0;
+}
+
+.animal img{
+    /* border: 1px solid #000; */
+    width: 30%;
+    padding: 20px;
+}
+
+.description{
+    /* border: 1px solid #000; */
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.animal h3{
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.user{
+    background-color: #fff;
+    box-shadow: 1px 1px 3px 1px rgba(138, 125, 125, 0.75);
+    margin: 20px auto;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+}
+
+.user img{
+    width: 20%;
+}
+
+.user-details{
+    display: flex;
+    flex-direction: column;
+}
+
+.posts{
+    background-color: #fff;
+    box-shadow: 1px 1px 3px 1px rgba(138, 125, 125, 0.75);
+    margin: 5px auto;
+    width: 90%;
+}
