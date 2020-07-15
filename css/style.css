@@ -43,6 +43,7 @@ body{
 .container{
     /* border: 1px solid #000; */
     width: 90%;
+	max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -55,18 +56,20 @@ header{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+	position: relative;
 }
+
 
 .bg-image{
 	background-image: url('../img/coding.gif');
 	background-position: left center;
 	/* background-position: 0 50%; */
 	/* background-repeat: no-repeat; */
-	width: 49%;
+	width: 38%;
 	height: 25vh;
 	position: absolute;
 	top: 0;
-	left: -11%;
+	right: 0;
 	opacity: 0.2;
 	z-index: 0;
 	clip-path: polygon(0% 0%, 95% 0%, 100% 50%, 95% 100%, 0% 100%);
@@ -82,6 +85,19 @@ header{
     font-weight: bold;
     font-size: 36px;
 	color: #fff;
+	position: relative;
+}
+
+.text::after{
+	content: '';
+	background-image: url('https://image.flaticon.com/icons/svg/2920/2920244.svg');
+	position: absolute;
+	left: 0;
+	bottom: -40px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+    width: 90px; 
+    height: 90px;
 }
 
 .text h1{
@@ -95,6 +111,16 @@ header{
     background-color: beige;
     margin: 5% 0;
     box-shadow: 0px 0px 4px 1px rgb(235, 235, 221);
+	position: relative;
+}
+
+.box h1::before{
+	content: '';
+	background-image: url('https://image.flaticon.com/icons/svg/890/890636.svg');
+	background-size: 100% 100%;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
 }
 
 .code-explain{
@@ -130,7 +156,8 @@ button{
 
 button:hover{
     transform: scale(1.05);
-    color: rgb(255, 255, 255);
+    //color: rgb(255, 255, 255);
+	color: #000;
 }
 
 .result{
@@ -142,6 +169,22 @@ button:hover{
     position: absolute;
     top: 10%;
     left: 17%;
+}
+
+#btnPets:hover::after, 
+#btn:hover::after,
+#btn2:hover::after,
+#btn3:hover::after
+{
+	content: '';
+	background-image: url('https://image.flaticon.com/icons/svg/32/32213.svg');
+	background-size: 100% 100%;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 6px;
+	right: 2%;
 }
 
 .btn-hide{
