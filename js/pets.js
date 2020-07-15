@@ -48,15 +48,15 @@ btnPets.addEventListener('click', function(){
             <div class = "animal">
                 <img src = "${pet.photo}"/>
                 <div class = "description">
-                    <h3>${pet.name} (${pet.species})</h3>
-                    <h5><strong>Age:</strong> ${age(pet.birthYear)}</h5>
+                    <h3><span>${pet.name}</span> <span style = "color: grey">(${pet.species})</span></h3>
+                    <h5><strong>Age:</strong> <span>${age(pet.birthYear)}</span></h5>
                     ${pet.favFoods ? food(pet.favFoods) : ''}
                 </div>
             </div>
         `
     }
     document.getElementById("app").innerHTML = `
-        <h1>Number of pets: <span>${petsData.length}</span> </h1>
+        <h3 style = "float: left">Number of pets: <span>${petsData.length}</span></h3>
         ${petsData.map(petTemplate).join('')}
     `;
     btnPets.classList.add('btn-hide');
